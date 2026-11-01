@@ -9,7 +9,11 @@ Uso:
   python publish.py --dry-run --now 2026-11-03T19:05:00-05:00   simula otra hora
 
 Variables de entorno:
-  IG_ACCESS_TOKEN   token de usuario de Instagram de larga duración (secreto)
+  IG_ACCESS_TOKEN   token (secreto). Acepta dos tipos:
+                      - token de usuario del sistema de Meta (empieza con EAA): usa graph.facebook.com
+                      - token de inicio de sesión con Instagram (empieza con IG): usa graph.instagram.com
+  IG_USER_ID        ID de la cuenta profesional de Instagram. Obligatorio con token de sistema
+                    si no se puede descubrir solo; con token de Instagram se obtiene de /me.
   MEDIA_BASE_URL    URL pública donde están los archivos de media/, terminada en /
   GRAPH_VERSION     versión de la API (por defecto v23.0)
   MAX_LATE_HOURS    no publica nada con más atraso que esto (por defecto 12)
@@ -27,19 +31,48 @@ from datetime import datetime, timedelta, timezone
 HERE = os.path.dirname(os.path.abspath(__file__))
 SCHEDULE = os.path.join(HERE, "schedule.json")
 STATE = os.path.join(HERE, "state.json")
-API = "https://graph.instagram.com/" + os.environ.get("GRAPH_VERSION", "v23.0")
+VERSION = os.environ.get("GRAPH_VERSION", "v23.0")
+API = None  # se fija en configure() según el tipo de token
 MAX_LATE = timedelta(hours=float(os.environ.get("MAX_LATE_HOURS", "12")))
 MAX_ATTEMPTS = 3
 
 
 def token():
-    t = os.environ.get("IG_ACCESS_TOKEN", "").strip()
-    if not t:
-        tf = os.path.join(HERE, ".token")
-        if os.path.exists(tf):
-            with open(tf, encoding="utf-8-sig") as fh:
-                t = fh.read().strip()
-    return t
+    return os.environ.get("IG_ACCESS_TOKEN", "").strip() or read_local(".token")
+
+
+def read_local(name):
+    p = os.path.join(HERE, name)
+    if os.path.exists(p):
+        with open(p, encoding="utf-8-sig") as fh:
+            return fh.read().strip()
+    return ""
+
+
+def configure(tok):
+    """Elige la API según el token y devuelve (ig_user_id, username)."""
+    global API
+    if tok.startswith("IG"):
+        API = f"https://graph.instagram.com/{VERSION}"
+        me = call("GET", "me", {"fields": "user_id,username"}, tok)
+        return me["user_id"], me.get("username")
+    API = f"https://graph.facebook.com/{VERSION}"
+    ig_id = os.environ.get("IG_USER_ID", "").strip() or read_local(".igid")
+    if not ig_id:
+        # Intento de descubrimiento: páginas con cuenta de Instagram vinculada.
+        try:
+            pages = call("GET", "me/accounts", {"fields": "instagram_business_account{id,username}"}, tok)
+            for pg in pages.get("data", []):
+                acc = pg.get("instagram_business_account")
+                if acc:
+                    ig_id = acc["id"]
+                    break
+        except RuntimeError:
+            pass
+    if not ig_id:
+        raise RuntimeError("Falta IG_USER_ID: el ID de la cuenta de Instagram (o el archivo .igid)")
+    acc = call("GET", ig_id, {"fields": "id,username"}, tok)
+    return acc["id"], acc.get("username")
 
 
 def call(method, path, params, tok):
@@ -132,11 +165,12 @@ def main():
     if a.check:
         if not tok:
             sys.exit("No hay token. Ponlo en IG_ACCESS_TOKEN o en el archivo .token")
-        me = call("GET", "me", {"fields": "user_id,username,account_type,media_count"}, tok)
-        print(f"Token válido para @{me.get('username')} (id {me.get('user_id')}, tipo {me.get('account_type')}, "
-              f"{me.get('media_count')} publicaciones)")
+        ig_id, username = configure(tok)
+        info = call("GET", ig_id, {"fields": "username,media_count"}, tok)
+        print(f"Token válido para @{username} (id {ig_id}, API {API.split('/')[2]}, "
+              f"{info.get('media_count')} publicaciones)")
         try:
-            q = call("GET", f"{me['user_id']}/content_publishing_limit", {"fields": "quota_usage,config"}, tok)
+            q = call("GET", f"{ig_id}/content_publishing_limit", {"fields": "quota_usage,config"}, tok)
             print("Cuota de publicación:", json.dumps(q.get("data", q), ensure_ascii=False))
         except RuntimeError as e:
             print("No se pudo leer la cuota:", e)
@@ -177,7 +211,8 @@ def main():
     if not base_url.endswith("/"):
         sys.exit("MEDIA_BASE_URL debe ser una URL pública terminada en /")
 
-    ig_id = call("GET", "me", {"fields": "user_id"}, tok)["user_id"]
+    ig_id, username = configure(tok)
+    print(f"Publicando en @{username}")
     failures = 0
     for at, it in sorted(due, key=lambda x: x[0]):
         rec = state.setdefault(it["id"], {})

@@ -23,6 +23,7 @@ jobs:
     timeout-minutes: 20
     env:
       IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      IG_USER_ID: ${{ vars.IG_USER_ID }}
       MEDIA_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/media/
     steps:
       - uses: actions/checkout@v4
