@@ -32,6 +32,15 @@
       "caption": "Viajo a Miami del 26 al 30 de noviembre y traigo lo que me encargues.\n\nPides en Amazon o en cualquier tienda de EE. UU., lo recibo allá y te lo entrego en Quito o Guayaquil desde el 1 de diciembre. Recibo pedidos hasta el sábado 28.\n\nEscríbeme al WhatsApp 096 060 9798 con el enlace del producto y te confirmo cupo y precio el mismo día.\n\n#Miami #BlackFriday #Quito #Guayaquil #Ecuador #Encargos"
     },
     {
+      "id": "v-explicativo-historia",
+      "at": "2026-11-02T19:00:00-05:00",
+      "type": "STORY",
+      "media": [
+        "explicativo_01.mp4"
+      ],
+      "origin": "panel"
+    },
+    {
       "id": "01-encargos",
       "at": "2026-11-03T19:00:00-05:00",
       "type": "FEED",
@@ -173,9 +182,9 @@
       "at": "2026-11-24T19:00:00-05:00",
       "type": "REEL",
       "media": [
-        "12_01.mp4"
+        "explicativo_01.mp4"
       ],
-      "caption": "El jueves viajo y esto es lo que traigo. Todavía recibo pedidos hasta el sábado 28.\n\nSi alguno te interesa, escríbeme y lo aparto con el 30 %. Si es de Amazon, pídelo esta semana para que llegue a tiempo al hotel.\n\n096 060 9798.\n\n#Miami #BlackFriday #Quito #Guayaquil #Ecuador"
+      "caption": "Así funciona Vuelo y Traigo.\n\nDel 26 al 30 de noviembre estoy en Miami. Si compras en Amazon o en cualquier tienda de EE. UU., lo envías a una dirección en Miami que te paso por WhatsApp y te lo entrego en Quito o Guayaquil desde el 1 de diciembre. Si es de Apple, puedo retirarlo por ti en la tienda.\n\nAdemás traigo tecnología, perfumes y suplementos para la venta.\n\nPedidos hasta el sábado 28. WhatsApp 096 060 9798.\n\n#Miami #BlackFriday #Quito #Guayaquil #Ecuador #Encargos"
     },
     {
       "id": "11-faltan-dos-dias-1",

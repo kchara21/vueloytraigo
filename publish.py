@@ -117,8 +117,12 @@ def publish_item(item, ig_id, base_url, tok):
         cid = call("POST", f"{ig_id}/media", {"image_url": urls[0], "caption": item.get("caption", "")}, tok)["id"]
         wait_ready(cid, tok, 120)
     elif kind == "STORY":
-        cid = call("POST", f"{ig_id}/media", {"image_url": urls[0], "media_type": "STORIES"}, tok)["id"]
-        wait_ready(cid, tok, 120)
+        if urls[0].lower().endswith(".mp4"):
+            cid = call("POST", f"{ig_id}/media", {"video_url": urls[0], "media_type": "STORIES"}, tok)["id"]
+            wait_ready(cid, tok, 600)
+        else:
+            cid = call("POST", f"{ig_id}/media", {"image_url": urls[0], "media_type": "STORIES"}, tok)["id"]
+            wait_ready(cid, tok, 120)
     elif kind == "CAROUSEL":
         children = []
         for u in urls:
