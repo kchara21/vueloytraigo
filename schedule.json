@@ -41,6 +41,15 @@
       "origin": "panel"
     },
     {
+      "id": "v-encargos-historia-2",
+      "at": "2026-11-01T18:45:00-05:00",
+      "type": "STORY",
+      "media": [
+        "encargos_01.mp4"
+      ],
+      "origin": "panel"
+    },
+    {
       "id": "01-encargos",
       "at": "2026-11-03T19:00:00-05:00",
       "type": "FEED",
