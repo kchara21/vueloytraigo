@@ -1,0 +1,167 @@
+{
+  "paused": false,
+  "items": [
+    {
+      "id": "01-encargos",
+      "at": "2026-11-03T19:00:00-05:00",
+      "type": "FEED",
+      "media": [
+        "01_01.jpg"
+      ],
+      "caption": "Viajo a Miami del 26 al 30 de noviembre y me cabe más de lo que necesito.\n\nSi hay algo que quieres de Amazon o de cualquier tienda de EE. UU., lo pides, lo recibo allá y te lo entrego en Quito o Guayaquil desde el 1 de diciembre. La tarifa está en la imagen.\n\nCupos limitados por maleta: un celular, una laptop, un smartwatch, unos audífonos. Cuando se llenan, cierro la lista.\n\nPedidos hasta el lunes 24. WhatsApp 096 060 9798.\n\n#Quito #Guayaquil #Ecuador #ComprasEnMiami #Encargos"
+    },
+    {
+      "id": "02-encargos-1",
+      "at": "2026-11-03T19:30:00-05:00",
+      "type": "STORY",
+      "media": [
+        "02_01.jpg"
+      ]
+    },
+    {
+      "id": "03-tecnologia",
+      "at": "2026-11-05T12:30:00-05:00",
+      "type": "CAROUSEL",
+      "media": [
+        "03_01.jpg",
+        "03_02.jpg",
+        "03_03.jpg",
+        "03_04.jpg",
+        "03_05.jpg",
+        "03_06.jpg",
+        "03_07.jpg"
+      ],
+      "caption": "Lo que traigo en tecnología, con precio de Black Friday y una unidad de cada uno.\n\nAirPods Pro 3 · $300\nApple Watch Series 11 · $430\nJBL Charge 6 · $220\nJBL Flip 7 · $165\nAnker Zolo 20.000 mAh · $65\n\nTodo sellado y con factura de EE. UU. Se reserva con el 30 % y se entrega desde el 1 de diciembre.\n\nWhatsApp 096 060 9798.\n\n#AirPods #AppleWatch #JBL #Quito #Guayaquil #BlackFriday"
+    },
+    {
+      "id": "04-airpods_watch-1",
+      "at": "2026-11-06T13:00:00-05:00",
+      "type": "STORY",
+      "media": [
+        "04_01.jpg"
+      ]
+    },
+    {
+      "id": "04-airpods_watch-2",
+      "at": "2026-11-06T13:02:00-05:00",
+      "type": "STORY",
+      "media": [
+        "04_02.jpg"
+      ]
+    },
+    {
+      "id": "05-perfumes",
+      "at": "2026-11-10T19:00:00-05:00",
+      "type": "CAROUSEL",
+      "media": [
+        "05_01.jpg",
+        "05_02.jpg",
+        "05_03.jpg",
+        "05_04.jpg",
+        "05_05.jpg",
+        "05_06.jpg",
+        "05_07.jpg"
+      ],
+      "caption": "Un perfume de 100 ml en Ecuador cuesta lo mismo que en EE. UU. más el pasaje. Estos los compro en Macy's, Sephora y Perfumania y los traigo sellados.\n\nBleu de Chanel EDP 100 ml · $250\nDior Sauvage EDP 100 ml · $220\nYSL Libre EDP 90 ml · $200\nGood Girl EDP 80 ml · $160\nVersace Eros EDP 100 ml · $120\n\nSolo puedo traer cinco frascos. Reserva con el 30 % al 096 060 9798.\n\n#Perfumes #DiorSauvage #BleuDeChanel #GoodGirl #Quito #Guayaquil"
+    },
+    {
+      "id": "06-sauvage_goodgirl-1",
+      "at": "2026-11-11T13:00:00-05:00",
+      "type": "STORY",
+      "media": [
+        "06_01.jpg"
+      ]
+    },
+    {
+      "id": "06-sauvage_goodgirl-2",
+      "at": "2026-11-11T13:02:00-05:00",
+      "type": "STORY",
+      "media": [
+        "06_02.jpg"
+      ]
+    },
+    {
+      "id": "07-bleu-1",
+      "at": "2026-11-13T13:00:00-05:00",
+      "type": "STORY",
+      "media": [
+        "07_01.jpg"
+      ]
+    },
+    {
+      "id": "08-apagones",
+      "at": "2026-11-17T19:00:00-05:00",
+      "type": "CAROUSEL",
+      "media": [
+        "08_01.jpg",
+        "08_02.jpg",
+        "08_03.jpg",
+        "08_04.jpg",
+        "08_05.jpg"
+      ],
+      "caption": "Cuando se va la luz, lo que se agota primero en Ecuador son los power banks, los UPS para el router y los focos recargables. Los traigo de Miami a precio normal.\n\nAnker Zolo 20.000 mAh · $65\nMini UPS para router (4 a 6 horas de internet) · $60\nFocos LED recargables, pack de 4 · $40\n\nCaben en la mochila, así que de estos sí traigo varios. Reserva al 096 060 9798.\n\n#Apagones #CortesDeLuz #Ecuador #PowerBank #Quito #Guayaquil"
+    },
+    {
+      "id": "09-apagones-1",
+      "at": "2026-11-18T13:00:00-05:00",
+      "type": "STORY",
+      "media": [
+        "09_01.jpg"
+      ]
+    },
+    {
+      "id": "09-apagones-2",
+      "at": "2026-11-18T13:02:00-05:00",
+      "type": "STORY",
+      "media": [
+        "09_02.jpg"
+      ]
+    },
+    {
+      "id": "09-apagones-3",
+      "at": "2026-11-18T13:04:00-05:00",
+      "type": "STORY",
+      "media": [
+        "09_03.jpg"
+      ]
+    },
+    {
+      "id": "10-fitness",
+      "at": "2026-11-20T12:30:00-05:00",
+      "type": "CAROUSEL",
+      "media": [
+        "10_01.jpg",
+        "10_02.jpg",
+        "10_03.jpg",
+        "10_04.jpg",
+        "10_05.jpg"
+      ],
+      "caption": "Gold Standard de 5 lb · $120\nCreatina Optimum Nutrition 300 g · $45\nNike Air Force 1 blancas, tallas 7 a 10 · $145\n\nLote de EE. UU., sellado. Si quieres otra talla de Air Force, escríbeme antes del 24 y la busco en el outlet.\n\n096 060 9798.\n\n#Gym #Proteina #Creatina #AirForce1 #Quito #Guayaquil"
+    },
+    {
+      "id": "11-faltan-dos-dias-1",
+      "at": "2026-11-22T13:00:00-05:00",
+      "type": "STORY",
+      "media": [
+        "11_01.jpg"
+      ]
+    },
+    {
+      "id": "13-ultimo-dia-1",
+      "at": "2026-11-24T13:00:00-05:00",
+      "type": "STORY",
+      "media": [
+        "13_01.jpg"
+      ]
+    },
+    {
+      "id": "12-lo-que-traigo",
+      "at": "2026-11-24T19:00:00-05:00",
+      "type": "REEL",
+      "media": [
+        "12_01.mp4"
+      ],
+      "caption": "Hoy cierro la lista. Esto es lo que viaja conmigo el jueves.\n\nSi alguno te interesa y no alcanzaste a reservar, escríbeme igual: si queda cupo en la maleta, lo traigo.\n\n096 060 9798.\n\n#Miami #BlackFriday #Quito #Guayaquil #Ecuador"
+    }
+  ]
+}

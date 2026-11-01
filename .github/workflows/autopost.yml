@@ -1,0 +1,48 @@
+name: autopost
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "publicar | check | dry-run"
+        default: "dry-run"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: autopost
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      MEDIA_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/media/
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Publicar lo que toca
+        run: |
+          case "${{ github.event.inputs.mode }}" in
+            check)   python publish.py --check ;;
+            dry-run) python publish.py --dry-run ;;
+            *)       python publish.py ;;
+          esac
+      - name: Guardar estado
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain state.json)" ]; then
+            git config user.name "autopost"
+            git config user.email "autopost@users.noreply.github.com"
+            git add state.json
+            git commit -m "Estado de publicaciones"
+            git push
+          fi
