@@ -2,6 +2,16 @@
   "paused": false,
   "items": [
     {
+      "id": "p2f8bd377",
+      "at": "2026-11-01T10:35:00-05:00",
+      "type": "FEED",
+      "media": [
+        "p2611011026448e5c_01.jpg"
+      ],
+      "origin": "panel",
+      "caption": "Tú lo compras, yo lo traigo. Pide en Amazon o en cualquier tienda de EE. UU. y te lo entrego en Quito o Guayaquil desde el 1 de diciembre. WhatsApp 096 060 9798."
+    },
+    {
       "id": "01-encargos",
       "at": "2026-11-03T19:00:00-05:00",
       "type": "FEED",
