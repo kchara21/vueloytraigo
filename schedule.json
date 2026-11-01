@@ -58,6 +58,25 @@
       ]
     },
     {
+      "id": "serie-v01-reel",
+      "at": "2026-11-04T19:00:00-05:00",
+      "type": "REEL",
+      "media": [
+        "serie_v01.mp4"
+      ],
+      "caption": "Si compras en Amazon este Black Friday, así me lo envías:\n\n1. Al pagar, pones mi nombre y la dirección en Miami que te paso por WhatsApp.\n2. Me mandas el número de pedido y yo sigo el envío.\n3. Tiene que llegar hasta el 27 de noviembre.\n\nTú lo pides; yo vuelo y te lo traigo.\n\nWhatsApp 096 060 9798\n\n#BlackFriday #Miami #Quito #Guayaquil #Ecuador #Encargos",
+      "origin": "panel"
+    },
+    {
+      "id": "serie-v01-story",
+      "at": "2026-11-04T19:02:00-05:00",
+      "type": "STORY",
+      "media": [
+        "serie_v01.mp4"
+      ],
+      "origin": "panel"
+    },
+    {
       "id": "03-tecnologia",
       "at": "2026-11-05T12:30:00-05:00",
       "type": "CAROUSEL",
@@ -87,6 +106,44 @@
       "media": [
         "04_02.jpg"
       ]
+    },
+    {
+      "id": "serie-v02-reel",
+      "at": "2026-11-07T19:00:00-05:00",
+      "type": "REEL",
+      "media": [
+        "serie_v02.mp4"
+      ],
+      "caption": "¿Algo de Apple de alto valor? Mejor retíralo en tienda:\n\n1. Al pagar, eliges retiro en una tienda de Miami.\n2. Agregas mi nombre como la persona que retira.\n3. Coordinamos el día; tu pedido tiene que estar listo para esa fecha.\n\nTú lo pides; yo vuelo y te lo traigo.\n\nWhatsApp 096 060 9798\n\n#BlackFriday #Miami #Quito #Guayaquil #Ecuador #Encargos",
+      "origin": "panel"
+    },
+    {
+      "id": "serie-v02-story",
+      "at": "2026-11-07T19:02:00-05:00",
+      "type": "STORY",
+      "media": [
+        "serie_v02.mp4"
+      ],
+      "origin": "panel"
+    },
+    {
+      "id": "serie-v03-reel",
+      "at": "2026-11-09T19:00:00-05:00",
+      "type": "REEL",
+      "media": [
+        "serie_v03.mp4"
+      ],
+      "caption": "¿Prefieres no complicarte con la compra? Yo hago el pedido por ti:\n\n1. Me mandas el enlace del producto y te confirmo el total.\n2. Me adelantas el 30 % y yo compro en Amazon.\n3. Te envío el comprobante y me encargo del resto.\n\nTú lo pides; yo vuelo y te lo traigo.\n\nWhatsApp 096 060 9798\n\n#BlackFriday #Miami #Quito #Guayaquil #Ecuador #Encargos",
+      "origin": "panel"
+    },
+    {
+      "id": "serie-v03-story",
+      "at": "2026-11-09T19:02:00-05:00",
+      "type": "STORY",
+      "media": [
+        "serie_v03.mp4"
+      ],
+      "origin": "panel"
     },
     {
       "id": "05-perfumes",
@@ -128,6 +185,44 @@
       ]
     },
     {
+      "id": "serie-v04-reel",
+      "at": "2026-11-13T19:00:00-05:00",
+      "type": "REEL",
+      "media": [
+        "serie_v04.mp4"
+      ],
+      "caption": "Fechas para que tu pedido llegue a tiempo:\n\n25 nov: último día para pedir en Amazon.\n27 nov: todo tiene que llegar a Miami.\n28 nov: cierro los pedidos.\n1 dic: entregas en Quito y Guayaquil.\n\nTú lo pides; yo vuelo y te lo traigo.\n\nWhatsApp 096 060 9798\n\n#BlackFriday #Miami #Quito #Guayaquil #Ecuador #Encargos",
+      "origin": "panel"
+    },
+    {
+      "id": "serie-v04-story",
+      "at": "2026-11-13T19:02:00-05:00",
+      "type": "STORY",
+      "media": [
+        "serie_v04.mp4"
+      ],
+      "origin": "panel"
+    },
+    {
+      "id": "serie-v05-reel",
+      "at": "2026-11-16T19:00:00-05:00",
+      "type": "REEL",
+      "media": [
+        "serie_v05.mp4"
+      ],
+      "caption": "Antes de comprar, escríbeme. Los cupos para electrónicos son limitados en cada viaje: me mandas el enlace, te confirmo que hay espacio y recién ahí compras. Así evitamos sorpresas.\n\nTú lo pides; yo vuelo y te lo traigo.\n\nWhatsApp 096 060 9798\n\n#BlackFriday #Miami #Quito #Guayaquil #Ecuador #Encargos",
+      "origin": "panel"
+    },
+    {
+      "id": "serie-v05-story",
+      "at": "2026-11-16T19:02:00-05:00",
+      "type": "STORY",
+      "media": [
+        "serie_v05.mp4"
+      ],
+      "origin": "panel"
+    },
+    {
       "id": "08-apagones",
       "at": "2026-11-17T19:00:00-05:00",
       "type": "CAROUSEL",
@@ -165,6 +260,25 @@
       ]
     },
     {
+      "id": "serie-v06-reel",
+      "at": "2026-11-19T19:00:00-05:00",
+      "type": "REEL",
+      "media": [
+        "serie_v06.mp4"
+      ],
+      "caption": "¿Qué conviene pedir en Black Friday? Lo que suele tener los mejores descuentos:\n\nAudífonos y relojes inteligentes.\nPerfumes y cuidado personal.\nRopa, zapatos y accesorios.\n\nCompara precios y escríbeme antes de comprar.\n\nTú lo pides; yo vuelo y te lo traigo.\n\nWhatsApp 096 060 9798\n\n#BlackFriday #Miami #Quito #Guayaquil #Ecuador #Encargos",
+      "origin": "panel"
+    },
+    {
+      "id": "serie-v06-story",
+      "at": "2026-11-19T19:02:00-05:00",
+      "type": "STORY",
+      "media": [
+        "serie_v06.mp4"
+      ],
+      "origin": "panel"
+    },
+    {
       "id": "10-fitness",
       "at": "2026-11-20T12:30:00-05:00",
       "type": "CAROUSEL",
@@ -178,6 +292,25 @@
       "caption": "Gold Standard de 5 lb · $120\nCreatina Optimum Nutrition 300 g · $45\nNike Air Force 1 blancas, tallas 7 a 10 · $145\n\nLote de EE. UU., sellado. Si quieres otra talla de Air Force, escríbeme hasta el 28 y la busco en el outlet.\n\n096 060 9798.\n\n#Gym #Proteina #Creatina #AirForce1 #Quito #Guayaquil"
     },
     {
+      "id": "serie-v07-reel",
+      "at": "2026-11-22T19:00:00-05:00",
+      "type": "REEL",
+      "media": [
+        "serie_v07.mp4"
+      ],
+      "caption": "Tres preguntas que me hacen siempre:\n\n¿Cuánto cobras? Depende del artículo; escríbeme y te confirmo el total.\n¿Dónde entregas? En Quito y Guayaquil, desde el 1 de diciembre.\n¿Hasta cuándo recibes pedidos? Hasta el sábado 28 de noviembre.\n\nTú lo pides; yo vuelo y te lo traigo.\n\nWhatsApp 096 060 9798\n\n#BlackFriday #Miami #Quito #Guayaquil #Ecuador #Encargos",
+      "origin": "panel"
+    },
+    {
+      "id": "serie-v07-story",
+      "at": "2026-11-22T19:02:00-05:00",
+      "type": "STORY",
+      "media": [
+        "serie_v07.mp4"
+      ],
+      "origin": "panel"
+    },
+    {
       "id": "12-lo-que-traigo",
       "at": "2026-11-24T19:00:00-05:00",
       "type": "REEL",
@@ -185,6 +318,25 @@
         "encargos_01.mp4"
       ],
       "caption": "Este Black Friday viajo a Miami y puedo traerte lo que compres. Hay tres formas:\n\n1. Compras en Amazon o en la tienda que quieras y lo envías a mi dirección en Miami (te la paso por WhatsApp). Tiene que llegar hasta el 27 de noviembre.\n2. Si es algo de Apple de alto valor, eliges retiro en tienda, me registras como quien retira, coordinamos el día y yo lo retiro.\n3. Yo hago el pedido por ti: me adelantas el 30 % y me encargo del resto.\n\nEntregas en Quito y Guayaquil desde el 1 de diciembre. Tú lo pides; yo vuelo y te lo traigo.\n\nWhatsApp 096 060 9798\n\n#BlackFriday #Miami #Quito #Guayaquil #Ecuador #Encargos"
+    },
+    {
+      "id": "serie-v08-reel",
+      "at": "2026-11-25T19:00:00-05:00",
+      "type": "REEL",
+      "media": [
+        "serie_v08.mp4"
+      ],
+      "caption": "Mañana viajo a Miami. Si vas a pedir en Amazon, hoy es el día para que llegue a tiempo. Si es un retiro en tienda, escríbeme y coordinamos el día. Cierro pedidos el sábado 28 y entrego desde el 1 de diciembre.\n\nTú lo pides; yo vuelo y te lo traigo.\n\nWhatsApp 096 060 9798\n\n#BlackFriday #Miami #Quito #Guayaquil #Ecuador #Encargos",
+      "origin": "panel"
+    },
+    {
+      "id": "serie-v08-story",
+      "at": "2026-11-25T19:02:00-05:00",
+      "type": "STORY",
+      "media": [
+        "serie_v08.mp4"
+      ],
+      "origin": "panel"
     },
     {
       "id": "11-faltan-dos-dias-1",
