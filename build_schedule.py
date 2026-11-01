@@ -40,6 +40,13 @@ def convert(src, dst):
 def main():
     if not os.path.isdir(SRC):
         sys.exit(f"No existe la carpeta del kit: {SRC}")
+    existing_path = os.path.join(HERE, "schedule.json")
+    if os.path.exists(existing_path) and "--force" not in sys.argv:
+        with open(existing_path, encoding="utf-8") as fh:
+            existing = json.load(fh)
+        if any(i.get("origin") == "panel" for i in existing.get("items", [])):
+            sys.exit("schedule.json tiene publicaciones creadas desde el panel y este script las borraría. "
+                     "Edita el calendario desde el panel, o usa --force si de verdad quieres regenerarlo desde el kit.")
     media_dir = os.path.join(HERE, "media")
     if os.path.isdir(media_dir):
         shutil.rmtree(media_dir)
